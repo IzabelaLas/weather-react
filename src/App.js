@@ -1,17 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Weather from "./Weather";
-
-function App() {
+import WeatherSearch from "./WeatherSearch";
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello from App</p>
-        <Weather />
-      </header>
+      <h1>Weather App</h1>
+      <WeatherSearch />
     </div>
   );
 }
-
-export default App;
