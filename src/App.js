@@ -5,6 +5,10 @@ export default function App() {
     <div className="App">
       <h1>Weather App</h1>
       <WeatherSearch />
+      <a href="https://github.com/IzabelaLas/weather-react">
+        Open source-code
+      </a>{" "}
+      by Izabela Laszczuk
     </div>
   );
 }
