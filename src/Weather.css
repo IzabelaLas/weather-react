@@ -1,3 +1,51 @@
+.App {
+  font-family: "Poppins", sans-serif;
+  max-width: 60%;
+  margin: 30px auto;
+  padding: 16px;
+}
 .container {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(149, 219, 254) 0%,
+    rgb(7, 134, 197) 90.1%
+  );
   border: 1px solid grey;
+  border-radius: 20px;
+  color: #ebf0f2;
+}
+
+.container h1 {
+  color: #ebf0f2;
+  font-weight: 700;
+}
+
+.container ul {
+  color: #ebf0f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container li {
+  font-weight: 300;
+  list-style: none;
+  line-height: 24 px;
+}
+
+.footer {
+  color: black;
+}
+
+.Description {
+  font-size: 14px;
+}
+
+.emoji {
+  width: 200px;
+  height: 200px;
+}
+
+.temperature {
+  font-size: 50px;
+  font-weight: 30;
 }

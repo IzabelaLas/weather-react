@@ -34,9 +34,10 @@ export default function WeatherSearch() {
       <input
         type="search"
         placeholder="Enter a city..."
+        autoFocus="on"
+        class="searchForm btn btn-outline-light btn-block btn-lg"
         onChange={updateCity}
       />
-      <button type="Submit">Search</button>
     </form>
   );
 

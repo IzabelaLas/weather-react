@@ -8,14 +8,21 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <br />
         <WeatherSearch />
-        <br />
         <Weather />
         <br />
       </div>
-      <a href="https://github.com/IzabelaLas/weather-react">Open source-code</a>{" "}
-      by Izabela Laszczuk
+      <footer>
+        <a
+          href="https://github.com/IzabelaLas/weather-react"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer"
+        >
+          Open source-code
+        </a>{" "}
+        by Izabela Laszczuk
+      </footer>
     </div>
   );
 }

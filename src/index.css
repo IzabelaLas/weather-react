@@ -7,11 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 ul {
   list-style-type: none;
+}
+
+.searchForm {
+  background-color: #ccd6e6;
+  border-color: #ccd6e6;
+  border-radius: 20px;
+  color: grey;
+  margin-top: 17px;
+  margin-bottom: 20px;
 }
