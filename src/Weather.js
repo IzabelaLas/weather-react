@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import FormatedDate from "./FormatedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherSearch() {
   const [city, setCity] = useState("");
@@ -54,8 +55,7 @@ export default function WeatherSearch() {
           <h1>{weather.city}</h1>
           <WeatherIcon code={weather.icon} />
         </ul>
-        <span className="temperature">{Math.round(weather.temperature)}</span>
-        <span className="unit">°C</span>
+        <WeatherTemperature celsius={weather.temperature} />
         <div>
           <ul className="Description">
             <li>Humidity {weather.humidity}%</li>
