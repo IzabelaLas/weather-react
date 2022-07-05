@@ -1,5 +1,4 @@
 import React from "react";
-import Weather from "./Weather";
 import { WiDaySunny } from "react-icons/wi";
 import { IconContext } from "react-icons";
 
