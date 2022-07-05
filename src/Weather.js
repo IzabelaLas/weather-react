@@ -3,16 +3,16 @@ import axios from "axios";
 import "./Weather.css";
 import { WiDaySunny } from "react-icons/wi";
 import { IconContext } from "react-icons";
+import FormatedDate from "./FormatedDate";
 
 export default function WeatherSearch() {
   const [city, setCity] = useState("");
-  const [loaded, setLoaded] = useState(false);
-  const [weather, setWeather] = useState({});
+  const [weather, setWeather] = useState({ ready: false });
 
   function displayWeather(response) {
-    setLoaded(true);
     setWeather({
-      date: "Thursday",
+      ready: true,
+      date: new Date(response.data.dt * 1000),
       time: "15:00",
       city: response.data.name,
       temperature: response.data.main.temp,
@@ -44,16 +44,16 @@ export default function WeatherSearch() {
     </form>
   );
 
-  if (loaded) {
+  if (weather.ready) {
     return (
       <IconContext.Provider value={{ size: "17em" }}>
         <div className="Weather">
           {form}
           <ul className="weather-info">
-            <li>{weather.date} </li>
-            <li>{weather.time}</li>
+            <li>
+              <FormatedDate date={weather.date} />{" "}
+            </li>
             <h1>{weather.city}</h1>
-            <br />
             <WiDaySunny className="emoji" />
           </ul>
           <span className="temperature">{Math.round(weather.temperature)}</span>
