@@ -17,7 +17,7 @@
 
 .container h1 {
   color: #ebf0f2;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .container ul {
@@ -40,12 +40,14 @@
   font-size: 14px;
 }
 
-.emoji {
-  width: 200px;
-  height: 200px;
-}
-
 .temperature {
   font-size: 50px;
-  font-weight: 30;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.unit {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
