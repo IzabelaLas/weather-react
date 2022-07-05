@@ -1,3 +1,12 @@
+.searchForm {
+  background-color: #ccd6e6;
+  border-color: #ccd6e6;
+  border-radius: 20px;
+  color: grey;
+  margin-top: 17px;
+  margin-bottom: 20px;
+}
+
 .App {
   font-family: "Poppins", sans-serif;
   max-width: 60%;
