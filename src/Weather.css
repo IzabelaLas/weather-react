@@ -50,13 +50,13 @@
 }
 
 .temperature {
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
 .unit {
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 400;
   margin-bottom: 10px;
 }

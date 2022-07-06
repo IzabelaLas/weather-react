@@ -55,7 +55,7 @@ export default function WeatherSearch() {
             <FormatedDate date={weather.date} />{" "}
           </li>
           <h1>{weather.city}</h1>
-          <WeatherIcon code={weather.icon} size={250} />
+          <WeatherIcon code={weather.icon} size={280} />
         </ul>
         <WeatherTemperature celsius={weather.temperature} />
         <div>
