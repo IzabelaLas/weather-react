@@ -4,6 +4,7 @@ import "./Weather.css";
 import FormatedDate from "./FormatedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherSearch() {
   const [city, setCity] = useState("");
@@ -12,6 +13,7 @@ export default function WeatherSearch() {
   function displayWeather(response) {
     setWeather({
       ready: true,
+      coord: response.data.coord,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       temperature: response.data.main.temp,
@@ -38,7 +40,7 @@ export default function WeatherSearch() {
         type="search"
         placeholder="Enter a city..."
         autoFocus="on"
-        class="searchForm btn btn-outline-light btn-block btn-lg"
+        className="searchForm btn btn-outline-light btn-block btn-lg"
         onChange={updateCity}
       />
     </form>
@@ -53,7 +55,7 @@ export default function WeatherSearch() {
             <FormatedDate date={weather.date} />{" "}
           </li>
           <h1>{weather.city}</h1>
-          <WeatherIcon code={weather.icon} />
+          <WeatherIcon code={weather.icon} size={250} />
         </ul>
         <WeatherTemperature celsius={weather.temperature} />
         <div>
@@ -61,6 +63,8 @@ export default function WeatherSearch() {
             <li>Humidity {weather.humidity}%</li>
             <li>Wind {Math.round(weather.wind)}km/h</li>
           </ul>
+
+          <WeatherForecast coordinates={weather.coord} />
         </div>
       </div>
     );

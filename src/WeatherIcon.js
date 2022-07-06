@@ -22,40 +22,40 @@ import {
 } from "react-icons/wi";
 export default function WeatherIcon(response) {
   if (response.code === "01d") {
-    return <WiDaySunny className="emoji" />;
+    return <WiDaySunny size={response.size} />;
   } else if (response.code === "01n") {
-    return <WiNightClear className="emoji" />;
+    return <WiNightClear size={response.size} />;
   } else if (response.code === "02d") {
-    return <WiDaySunnyOvercast className="emoji" />;
+    return <WiDaySunnyOvercast size={response.size} />;
   } else if (response.code === "02n") {
-    return <WiNightAltCloudy className="emoji" />;
+    return <WiNightAltCloudy size={response.size} />;
   } else if (response.code === "03d") {
-    return <WiCloud className="emoji" />;
+    return <WiCloud size={response.size} />;
   } else if (response.code === "03n") {
-    return <WiNightCloudy className="emoji" />;
+    return <WiNightCloudy size={response.size} />;
   } else if (response.code === "04d") {
-    return <WiCloudy className="emoji" />;
+    return <WiCloudy size={response.size} />;
   } else if (response.code === "04n") {
-    return <WiNightAltCloudyHigh className="emoji" />;
+    return <WiNightAltCloudyHigh size={response.size} />;
   } else if (response.code === "09d") {
-    return <WiDaySprinkle className="emoji" />;
+    return <WiDaySprinkle size={response.size} />;
   } else if (response.code === "09n") {
-    return <WiNightAltShowers className="emoji" />;
+    return <WiNightAltShowers size={response.size} />;
   } else if (response.code === "10d") {
-    return <WiDaySleet className="emoji" />;
+    return <WiDaySleet size={response.size} />;
   } else if (response.code === "10n") {
-    return <WiNightAltRainMix className="emoji" />;
+    return <WiNightAltRainMix size={response.size} />;
   } else if (response.code === "11d") {
-    return <WiDayThunderstorm className="emoji" />;
+    return <WiDayThunderstorm size={response.size} />;
   } else if (response.code === "11n") {
-    return <WiNightAltThunderstorm className="emoji" />;
+    return <WiNightAltThunderstorm size={response.size} />;
   } else if (response.code === "13d") {
-    return <WiDaySnow className="emoji" />;
+    return <WiDaySnow size={response.size} />;
   } else if (response.code === "13n") {
-    return <WiNightAltSnow className="emoji" />;
+    return <WiNightAltSnow size={response.size} />;
   } else if (response.code === "50d") {
-    return <WiDayHaze className="emoji" />;
+    return <WiDayHaze size={response.size} />;
   } else if (response.code === "50n") {
-    return <WiNightFog className="emoji" />;
+    return <WiNightFog size={response.size} />;
   }
 }
