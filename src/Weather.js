@@ -63,6 +63,7 @@ export default function WeatherSearch() {
             <li>Humidity {weather.humidity}%</li>
             <li>Wind {Math.round(weather.wind)}km/h</li>
           </ul>
+          <hr />
 
           <WeatherForecast coordinates={weather.coord} />
         </div>
